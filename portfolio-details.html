@@ -1,12 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head><!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-M2MHKFP4');</script>
-<!-- End Google Tag Manager -->
+  <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
@@ -44,9 +38,29 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     <!-- Template Main CSS File -->
     <link href="assets/css/main.css" rel="stylesheet" />
-
     <!-- Start of Userlove Code Snippet -->
-
+    <script>
+      var userloveq = [];
+      function userlove(method, args) {
+        !!userloveMethods && userloveMethods[method]
+          ? userloveMethods[method](args)
+          : userloveq.push({ method: method, args: args });
+      }
+      (function (l, o, v, e) {
+        if (l["a_id"]) {
+          return;
+        }
+        l["a_id"] = e;
+        l["dm"] = l.location.hostname;
+        l[v] = l[v] || [];
+        l[o] = {};
+        var s = document.createElement("script");
+        s.async = true;
+        s.src = "https://cdn.userlove.io/wrapper.dev.js?v=" + Date.now();
+        var t = document.getElementsByTagName("script")[0];
+        t.parentNode.insertBefore(s, t);
+      })(window, "userloveMethods", "userloveDL", "CMKPL1RADL");
+    </script>
     <!-- End of Userlove Code Snippet -->
   </head>
 
@@ -55,10 +69,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     data-bs-spy="scroll"
     data-bs-target="#navmenu"
   >
-   <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M2MHKFP4"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
     <!-- ======= Header ======= -->
     <header id="header" class="header sticky-top d-flex align-items-center">
       <div
